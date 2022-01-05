@@ -6,6 +6,7 @@ export type TypePros = 'primary' | 'secondary';
 type Props = {
   type: TypePros;
 };
+
 export const Container = styled(TextInput).attrs<Props>(({ theme, type }) => ({
   placeholderTextColor:
     type === 'primary' ? theme.COLORS.SECONDARY_900 : theme.COLORS.PRIMARY_50,
